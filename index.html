@@ -38,6 +38,11 @@
             </li>
           </ul>
         </nav>
+        <button class="burger-btn" type="button" data-menu-open>
+            <svg class="burger-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         <address class="contacts" id="contacts">
           <ul class="contacts-list">
             <li class="contacts-item">
@@ -51,7 +56,7 @@
               >
             </li>
           </ul>
-        </address>
+        </address>        
       </div>
     </header>
     <main>
@@ -311,9 +316,6 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-                <!-- <div class="overlay">
-                  
-                </div> -->
               </div>
               <div class="img-desc">
                 <h3 class="portfolio-subtitle">Banking App</h3>
@@ -562,6 +564,67 @@
         </form>
       </div>
     </div>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-btn" type="button" data-menu-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp"></use>
+          </svg>
+          </button>
+        <ul class="mobelemenu-list">
+          <li><a href="">Studio</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+        <ul class="mobile-contscts">
+          <li><a href="">+11 (000) 111-11-11</a></li>
+          <li><a href="">info@devstudio.com</a></li>
+        </ul>
+        <ul class="team-socials mobile">
+                    <li class="socials-list">
+                      <a class="icon-item" href="">
+                        <svg class="socials-icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials-list">
+                      <a class="icon-item" href="">
+                        <svg class="socials-icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials-list">
+                      <a class="icon-item" href="">
+                        <svg class="socials-icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials-list">
+                      <a class="icon-item" href="">
+                        <svg class="socials-icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
+
+<!-- 
+@media only screen and (min-width: 768px) {
+   {
+    
+  }
+}
+@media only screen and (min-width: 1158px) {
+   {
+    
+  }
+} -->
