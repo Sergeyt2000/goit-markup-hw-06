@@ -261,28 +261,69 @@ a {
 /* #region Hero */
 .hero {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/hero-img.jpg);
+    url(../images/hero/hero-img-mob.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1440px;
   margin: 0 auto;
 }
-@media only screen and (min-resolution: 192dpi) {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero/hero-img@2x.jpg);
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-img-mob@2x.jpg);
   }
 }
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-img-tab.jpg);
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-img-tab@2x.jpg);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-img.jpg);
+  }
+}
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-img@2x.jpg);
+  }
+}
+
 .hero .container {
   text-align: center;
   display: flex;
@@ -482,6 +523,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 72px;
 }
 @media only screen and (min-width: 768px) {
   .team-list {
@@ -1224,12 +1266,23 @@ input[type='checkbox']:focus-visible
   display: flex;
   flex-direction: column;
   gap: 40px;
+  /* font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42; */
+  margin-bottom: auto;
+}
+.mobilemenu-link {
+  display: block;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: auto;
+}
+.mobilemenu-link.current {
+  color: #404bbf;
 }
 .mobile-contscts {
   display: flex;
@@ -1237,14 +1290,22 @@ input[type='checkbox']:focus-visible
   margin-bottom: 48px;
   gap: 24px;
 }
-
+.mobile-contscts-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.mobile-contscts-link.current {
+  color: #4d5ae5;
+}
 .mobile {
   justify-content: left;
   gap: 40px;
 }
 
 /* #endregion */
-
 
 /* .hide {
   display: none;
